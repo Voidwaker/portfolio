@@ -23,9 +23,8 @@ body {
 }
 /*header*/
 .primary-header {
-    border: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     padding: 10px;
-    border-radius: 10px;
 }
 /* Card Styles */
 .card-container {
@@ -125,5 +124,13 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 2px solid var(--border-color);
 }
 
