@@ -4,6 +4,7 @@
     --background-color-light: #fff;
     --text-color-dark: #fff;
     --background-color-dark: #333;
+    --border-color:#000;
 }
 
 body {
@@ -18,14 +19,21 @@ body {
 .dark-mode {
     --background-color-light: var(--background-color-dark);
     --text-color-light: var(--text-color-dark);
+    --border-color:#fff;
 }
-
+/*header*/
+.primary-header {
+    border: 2px solid var(--border-color);
+    padding: 10px;
+    border-radius: 10px;
+}
 /* Card Styles */
 .card-container {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .card {
