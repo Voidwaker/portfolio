@@ -220,7 +220,7 @@ input:checked + .slider:before {
 }
 
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: #2196F3;
     color: white;
     padding: 10px 20px;
     border: none;
