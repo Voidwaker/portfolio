@@ -3,7 +3,7 @@
     --text-color-light: #000;
     --background-color-light: #fff;
     --text-color-dark: #fff;
-    --background-color-dark: #333;
+    --background-color-dark: #424242;
     --border-color:#000;
 }
 
@@ -69,6 +69,34 @@ body {
 .card-content a:hover {
     text-decoration: underline;
 }
+/*about me*/
+.about-me {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    background: var(--background-color-light); 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    border-radius: 8px; 
+    padding: 20px; 
+    margin-bottom: 25px; 
+    margin-top: 25px;
+}
+
+.about-me img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+.about-me h1 {
+    margin: 0 0 10px 0; 
+}
+
+.about-me p {
+    margin: 0; 
+    flex: 1; 
+}
 
 /* Theme Switch Styles */
 .switch {
@@ -125,6 +153,55 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+/* contact*/
+#contact {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
 
 /* footer */
 footer {
