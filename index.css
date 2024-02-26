@@ -26,6 +26,33 @@ body {
     border-bottom: 2px solid var(--border-color);
     padding: 10px;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--background-color-light);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-weight: bold;
+}
+
 /* Card Styles */
 .card-container {
     display: flex;
