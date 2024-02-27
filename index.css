@@ -10,7 +10,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding-top: 100px;
     transition: background-color 0.3s ease, color 0.3s ease;
     background-color: var(--background-color-light);
     color: var(--text-color-light);
