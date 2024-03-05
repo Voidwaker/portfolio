@@ -52,7 +52,7 @@ body {
     
 }
 #myBtn {
-    z-index: 1000; /* Juster dette tallet basert på z-indexen til headeren din */
+    z-index: 1000;
     bottom:70px
 }
 
