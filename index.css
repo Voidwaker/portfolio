@@ -268,7 +268,9 @@ button[type="submit"]:hover {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 20px;
     border-top: 2px solid var(--border-color);
+    flex-direction: column;
 }
 
