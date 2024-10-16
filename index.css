@@ -257,3 +257,144 @@ footer {
     line-height: 1.7;
 }
 
+/* media-queries.css - Media Queries for Responsiveness */
+
+/* General Mobile First Approach */
+@media (max-width: 768px) {
+    body {
+        padding-top: 60px;
+    }
+
+    /* Header adjustments for smaller screens */
+    .primary-header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .github-icon-wrapper {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* About Me Section */
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    .about-me img {
+        margin-bottom: 20px;
+    }
+
+    /* Cards Adjustments */
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* Contact Section Adjustments */
+    #contact {
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Footer Adjustments */
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Tablet Layout Adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Header adjustments for tablets */
+    .primary-header {
+        padding: 15px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* About Me Section */
+    .about-me {
+        flex-direction: row;
+        text-align: left;
+        margin-top: 100px;
+    }
+
+    .about-me p {
+        font-size: 17px;
+    }
+
+    /* Cards Adjustments */
+    .card-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    /* Contact Section Adjustments */
+    #contact {
+        max-width: 80%;
+        padding: 30px;
+    }
+}
+
+/* Desktop Layout Adjustments */
+@media (min-width: 1025px) {
+    /* Header */
+    .primary-header {
+        padding: 20px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* About Me Section */
+    .about-me {
+        max-width: 1000px;
+        margin-top: 100px;
+    }
+
+    /* Cards */
+    .card-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
