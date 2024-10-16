@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sigurd's Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
 <header>
@@ -18,15 +19,14 @@
         </div>
         <a href="https://github.com/Voidwaker" target="_blank" class="github-icon-wrapper">
             <img src="images/githubbern.png" alt="GitHub" width="30" height="30">
+        </a>
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <button onclick="topFunction()" id="myBtn" title="Gå til toppen">Til toppen</button>
-
     </nav>
-
 </header>
 
 <section id="about">
@@ -34,75 +34,66 @@
         <h1>Sigurd Vaaler</h1>
         <img src="images/pictureofme.jpg" alt="picture of me">
         <p>Hi, I'm Sigurd Bolling Vaaler, a front-end development student at Noroff. I'm passionate about coding and creating user-friendly digital experiences. My journey in tech is driven by a curiosity to innovate and a desire to make engaging web environments.
-
             When not coding, I'm a sports enthusiast, enjoying everything from the strategic plays in hockey to the high-speed thrill of Formula 1 and the dynamic action of UFC. These interests inspire my approach to development: agile, precise, and always evolving.
-            
             I'm on a quest to blend my technical skills with my passions, aiming to contribute to meaningful projects that push the boundaries of digital possibilities. Looking forward to making impactful connections in the tech world.</p>
     </div>
 </section>
 
 <section id="projects">
     <div class="card-container">
-        <div class="card-container">
-            <div class="card">
-                <img src="./images/OdasBloggExam.png" alt="Prosjekt 3 Skjermbilde">
-                <div class="card-content">
-                    <h2>Odas Blogg</h2>
-                    <p>This is my exam, where i utilized html,css and javascript, making an functionable blog, fetching blogposts from an api, with a carousell.</p>
-                    <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Voidwaker" target="_blank">GitHub Repo</a> | 
-                    <a href="https://poetic-puffpuff-7681b8.netlify.app" target="_blank">Live Versjon</a>
-                </div>
+        <div class="card">
+            <img src="./images/OdasBloggExam.png" alt="Prosjekt 3 Skjermbilde">
+            <div class="card-content">
+                <h2>Odas Blogg</h2>
+                <p>This is my exam, where I utilized HTML, CSS, and JavaScript, making a functional blog, fetching blog posts from an API, with a carousel.</p>
+                <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Voidwaker" target="_blank">GitHub Repo</a> |
+                <a href="https://poetic-puffpuff-7681b8.netlify.app" target="_blank">Live Version</a>
             </div>
-            <div class="card">
-                <img src="./images/rainydaysscreen.png" alt="Prosjekt 1 Skjermbilde">
-                <div class="card-content">
-                    <h2>Rainydays</h2>
-                    <p>An fiction e-commers site, selling rain/outdor jackets with an target audience of people wanting affordable outdor jackets, active people. this was the first project i did. </p>
-                    <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-Voidwaker" target="_blank">GitHub Repo</a> | 
-                    <a href="https://capable-lily-cc8692.netlify.app" target="_blank">Live Versjon</a>
-                </div>
+        </div>
+        <div class="card">
+            <img src="./images/rainydaysscreen.png" alt="Prosjekt 1 Skjermbilde">
+            <div class="card-content">
+                <h2>Rainydays</h2>
+                <p>A fictional e-commerce site selling rain/outdoor jackets with a target audience of people wanting affordable outdoor jackets, active people. This was the first project I did.</p>
+                <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-Voidwaker" target="_blank">GitHub Repo</a> |
+                <a href="https://capable-lily-cc8692.netlify.app" target="_blank">Live Version</a>
             </div>
-        
-            <div class="card">
-                <img src="./images/communitysciencescree.png" alt="Prosjekt 2 Skjermbilde">
-                <div class="card-content">
-                    <h2>Community Science Museum</h2>
-                    <p>This is an html/css assignment, where i made a site for an fictonable museum, where the target audience wis primary and middle school childerens ages from 7-15</p>
-                    <a href="https://github.com/Voidwaker/Semester-Project1_Sigurd-Vaaler" target="_blank">GitHub Repo</a> | 
-                    <a href="https://bejewelled-nasturtium-3723d5.netlify.app" target="_blank">Live Versjon</a>
-                </div>
+        </div>
+        <div class="card">
+            <img src="./images/communitysciencescree.png" alt="Prosjekt 2 Skjermbilde">
+            <div class="card-content">
+                <h2>Community Science Museum</h2>
+                <p>This is an HTML/CSS assignment, where I made a site for a fictional museum, targeting primary and middle school children ages 7-15.</p>
+                <a href="https://github.com/Voidwaker/Semester-Project1_Sigurd-Vaaler" target="_blank">GitHub Repo</a> |
+                <a href="https://bejewelled-nasturtium-3723d5.netlify.app" target="_blank">Live Version</a>
             </div>
         </div>
     </div>
 </section>
-
 <section id="contact">
     <h2>Contact Me</h2>
     <form id="contact-form" action="submit_form.php" method="POST">
-        <form id="contact-form" action="submit_form.php" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Send</button>
-        </form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send</button>
     </form>
 </section>
 
 <footer>
-    <p>© 2024 Sigurd Vaaler</p>
-    <p>Business Inquiries Contact: Sigurdvaaler@hotmail.com</p>
+    <p>&copy; 2024 Sigurd Vaaler</p>
+    <p>Business Inquiries Contact: <a href="mailto:Sigurdvaaler@hotmail.com">Sigurdvaaler@hotmail.com</a></p>
 </footer>
 
 <script src="index.js"></script>
 </body>
 </html>
-
