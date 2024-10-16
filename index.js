@@ -1,17 +1,16 @@
-document.getElementById('mode-toggle').addEventListener('change', function(event){
-    if(event.target.checked) {
-        document.body.classList.add('dark-mode');
-        document.body.classList.remove('light-mode');
-        document.getElementById('theme-text').textContent = 'Dark Mode'; 
+document.getElementById('mode-toggle').addEventListener('change', function(event) {
+    if (event.target.checked) {
+        document.documentElement.style.setProperty('--background-color-light', '#424242');
+        document.documentElement.style.setProperty('--text-color-light', '#fff');
+        document.getElementById('theme-text').textContent = 'Dark Mode';
     } else {
-        document.body.classList.add('light-mode');
-        document.body.classList.remove('dark-mode');
-        document.getElementById('theme-text').textContent = 'Light Mode'; 
+        document.documentElement.style.setProperty('--background-color-light', '#fff');
+        document.documentElement.style.setProperty('--text-color-light', '#000');
+        document.getElementById('theme-text').textContent = 'Light Mode';
     }
 });
 
-  // Når brukeren scroller ned 20px fra toppen av dokumentet, vis knappen
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -21,18 +20,21 @@ function scrollFunction() {
     }
 }
 
-// Når brukeren klikker på knappen, scroll til toppen av dokumentet
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE og Opera
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
-
-  
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        const targetElement = document.querySelector(this.getAttribute('href'));
+        const offsetPosition = targetElement.offsetTop - 150;
+        
+        window.scrollTo({
+            top: offsetPosition,
             behavior: 'smooth'
         });
     });
