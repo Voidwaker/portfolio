@@ -39,3 +39,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+
+
+document.querySelectorAll('.tab-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      // Fjern "active" fra alle knapper
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      // Skjul alle prosjektscontainere
+      document.querySelectorAll('.projects-container').forEach(container => container.classList.remove('active'));
+      
+      // Legg til "active" på den klikkede knappen og vis riktig container
+      button.classList.add('active');
+      const target = document.querySelector(button.getAttribute('data-target'));
+      target.classList.add('active');
+    });
+  });
+  
