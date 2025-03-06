@@ -1,5 +1,5 @@
-# portfolio
-this is where i show you guys/girls what i can do as an developer:) havnt done that many projects yet, so its quit empty for now
+![image](https://github.com/user-attachments/assets/4f1e6793-40c7-4993-9d28-ad915a56dd20)
+
 
 # the portifolio
 is made with plain html, css and Javascipt, its mostly html and css. the only thing i used js for was the smoothscrolling and the dark mode toggle.
@@ -9,5 +9,5 @@ i have added hower effects and some other effects on the images and on the cards
 
 
 # Contribution
-- *since this is my prrtifolio, i do not want any contribution.
+- *since this is my portifolio, i do not want any contribution.
 
