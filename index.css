@@ -437,3 +437,7 @@ footer {
     font-size: 40px;
   }
 }
+
+.projects-section h2 {
+  text-align: center;
+}
