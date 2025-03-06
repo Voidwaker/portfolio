@@ -1,109 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sigurd's Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sigurd's Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
-<header>
+  <header>
     <nav class="primary-header">
-        <div class="theme-switch-wrapper">
-            <label class="switch">
-                <input type="checkbox" id="mode-toggle">
-                <span class="slider round"></span>
-            </label>
-            <p id="theme-text">Light mode</p>
-        </div>
-        <a href="https://github.com/Voidwaker" target="_blank" class="github-icon-wrapper">
-            <img src="images/githubbern.png" alt="GitHub" width="30" height="30">
-        </a>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button onclick="topFunction()" id="myBtn" title="Gå til toppen">Til toppen</button>
+      <div class="theme-switch-wrapper">
+        <label class="switch">
+          <input type="checkbox" id="mode-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+        <p id="theme-text">Dark Mode</p>
+      </div>           
+      <a href="https://github.com/Voidwaker" target="_blank" class="github-icon-wrapper">
+        <img src="images/githubbern.png" alt="GitHub" width="30" height="30">
+      </a>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button onclick="topFunction()" id="myBtn" title="Gå til toppen">Til toppen</button>
     </nav>
-</header>
-
-<section id="about">
+  </header>
+  <section id="hero" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Sigurd's Digital Universe</h1>
+      <p>Innovative. Creative. Driven.</p>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </div>
+  </section>
+  <section id="about" class="about-section">
     <div class="about-me">
-        <h1>Sigurd Vaaler</h1>
-        <img src="images/pictureofme.jpg" alt="picture of me">
-        <p>Hi, I’m Sigurd Bolling Vaaler, a front-end development student at Noroff with a passion for crafting user-centric digital experiences. My curiosity for technology fuels my drive to create engaging, intuitive web environments.
-            I bring the same energy to coding as I do to my love for sports. Whether it's the strategic depth of hockey, the high-speed precision of Formula 1, or the dynamic intensity of UFC, these interests shape my approach: agile, adaptable, and always evolving.
-            I’m excited to blend my technical expertise with my passions, contributing to projects that push the boundaries of innovation. Let’s connect and create impactful digital solutions together.</p>
+      <h2>Sigurd Vaaler</h2>
+      <img src="images/pictureofme.jpg" alt="Sigurd Vaaler">
+      <p>
+        Hi, I’m Sigurd Bolling Vaaler, a front-end development student at Noroff with a passion for crafting user-centric digital experiences.
+        My curiosity for technology fuels my drive to create engaging, intuitive web environments. I bring the same energy to coding as I do to my love for sports.
+        Whether it's the strategic depth of hockey, the high-speed precision of Formula 1, or the dynamic intensity of UFC, these interests shape my approach: agile, adaptable, and always evolving.
+        I’m excited to blend my technical expertise with my passions, contributing to projects that push the boundaries of innovation.
+        Let’s connect and create impactful digital solutions together.
+      </p>
     </div>
-<div class="tech-stack">
-    <h2>My Tech Stack</h2>
-    <i class="devicon-html5-plain colored"></i>
-    <i class="devicon-css3-plain colored"></i>
-    <i class="devicon-javascript-plain colored"></i>
-    <i class="devicon-bootstrap-plain colored"></i>
-    <i class="devicon-sass-original colored"></i>
-    <i class="devicon-github-original colored"></i>
-</div>
-</section>
-
-<section id="projects">
-    <div class="card-container">
-        <div class="card">
-            <img src="./images/OdasBloggExam.png" alt="Prosjekt 3 Skjermbilde">
-            <div class="card-content">
-                <h2>Odas Blogg</h2>
-                <p>This is my exam, where I utilized HTML, CSS, and JavaScript, making a functional blog, fetching blog posts from an API, with a carousel.</p>
-                <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Voidwaker" target="_blank">GitHub Repo</a> |
-                <a href="https://poetic-puffpuff-7681b8.netlify.app" target="_blank">Live Version</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./images/rainydaysscreen.png" alt="Prosjekt 1 Skjermbilde">
-            <div class="card-content">
-                <h2>Rainydays</h2>
-                <p>A fictional e-commerce site selling rain/outdoor jackets with a target audience of people wanting affordable outdoor jackets, active people. This was the first project I did.</p>
-                <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-Voidwaker" target="_blank">GitHub Repo</a> |
-                <a href="https://capable-lily-cc8692.netlify.app" target="_blank">Live Version</a>
-            </div>
-        </div>
-        <div class="card">
-            <img src="./images/communitysciencescree.png" alt="Prosjekt 2 Skjermbilde">
-            <div class="card-content">
-                <h2>Community Science Museum</h2>
-                <p>This is an HTML/CSS assignment, where I made a site for a fictional museum, targeting primary and middle school children ages 7-15.</p>
-                <a href="https://github.com/Voidwaker/Semester-Project1_Sigurd-Vaaler" target="_blank">GitHub Repo</a> |
-                <a href="https://bejewelled-nasturtium-3723d5.netlify.app" target="_blank">Live Version</a>
-            </div>
-        </div>
+    <div class="tech-stack">
+      <h3>My Tech Stack</h3>
+      <div class="icons">
+        <i class="devicon-html5-plain colored"></i>
+        <i class="devicon-css3-plain colored"></i>
+        <i class="devicon-javascript-plain colored"></i>
+        <i class="devicon-react-original colored"></i>
+        <i class="devicon-bootstrap-plain colored"></i>
+        <i class="devicon-sass-original colored"></i>
+        <i class="devicon-github-original colored"></i>
+      </div>
+    </div>    
+  </section>
+  <section id="projects" class="projects-section">
+    <h2>Projects</h2>
+    <div class="project-tabs">
+      <button class="tab-btn active" data-target="#projects-second-year">Second Year Projects</button>
+      <button class="tab-btn" data-target="#projects-first-year">First Year Projects</button>
     </div>
-</section>
-<section id="contact">
+    <div id="projects-second-year" class="projects-container active">
+      <div class="card-container">
+        <article class="card">
+            <img src="images/Auction-Website.png" alt="js2 project">
+            <div class="card-content">
+              <h3>Auction-Website</h3>
+              <p>
+               this project is a webiste where you can bid on items and sell items. registed users can place bids, while unregisted useers can browe thru listings.. this project is build using html, scss, javascript.
+              </p>
+              <p class="links">
+                <a href="#" target="https://github.com/Voidwaker/auction-website">GitHub Repo</a> |     
+                <a href="#" target="https://voidwaker.github.io/auction-website/">Live Version</a>
+              </p>
+            </div>
+          </article>          
+          <article class="card">
+            <img src="images/Credicart2.png" alt="Credicart Project">
+            <div class="card-content">
+              <h3>Credicart</h3>
+              <p>
+                This project is a fictionabel Ecommers store built with react the aplication features a dynamic product rendering, cart funtionality, checkout process and a contact form. 
+              </p>
+              <p class="links">
+                <a href="#" target="https://github.com/Voidwaker/credicart">GitHub Repo</a> |
+                <a href="#" target="https://credicart.netlify.app">Live Version</a>
+              </p>
+            </div>
+          </article>          
+          <article class="card">
+            <img src="images/Holihub-img.png" alt="Holihub project">
+            <div class="card-content">
+              <h3>HoliHub</h3>
+              <p>
+                this is Project is my Exame for the second year at noroff. the project is a fictional travel website, where a registerd user can book venues and if the user is a VM (VenueManbager) they can list a Venue, VM can also see who has made a booking at theyr venye (name and date). the homepage has a carouselle that goes thru the 5 most popular bookings, the header is dyunamic, so the nav is updated when a user logs in, and when a user is logged out . the site is built with React, bootstrap, and noroff api.
+              </p>
+              <p class="links">
+                <a href="#" target="https://github.com/Voidwaker/pe2">GitHub Repo</a> |
+                <a href="#" target="https://holihub.netlify.app">Live Version</a>
+              </p>
+            </div>
+          </article>          
+      </div>
+    </div>
+    <div id="projects-first-year" class="projects-container">
+      <div class="card-container">
+        <article class="card">
+          <img src="images/rainydaysscreen.png" alt="Rainydays Project">
+          <div class="card-content">
+            <h3>Rainydays</h3>
+            <p>
+              A fictional e-commerce platform for affordable rain/outdoor jackets, designed for active individuals seeking quality and style.
+            </p>
+            <p class="links">
+              <a href="https://github.com/Noroff-FEU-Assignments/cross-course-project-Voidwaker" target="_blank">GitHub Repo</a> |
+              <a href="https://capable-lily-cc8692.netlify.app" target="_blank">Live Version</a>
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/communitysciencescree.png" alt="Community Science Museum Project">
+          <div class="card-content">
+            <h3>Community Science Museum</h3>
+            <p>
+              An HTML/CSS assignment to create an engaging site for a fictional museum aimed at inspiring primary and middle school students.
+            </p>
+            <p class="links">
+              <a href="https://github.com/Voidwaker/Semester-Project1_Sigurd-Vaaler" target="_blank">GitHub Repo</a> |
+              <a href="https://bejewelled-nasturtium-3723d5.netlify.app" target="_blank">Live Version</a>
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/OdasBloggExam.png" alt="Odas Blogg Project">
+          <div class="card-content">
+            <h3>Odas Blogg</h3>
+            <p>
+              An exam project where I built a functional blog using HTML, CSS, and JavaScript, integrating API-fetched posts with an interactive carousel.
+            </p>
+            <p class="links">
+              <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Voidwaker" target="_blank">GitHub Repo</a> |
+              <a href="https://poetic-puffpuff-7681b8.netlify.app" target="_blank">Live Version</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact-section">
     <h2>Contact Me</h2>
     <form id="contact-form" action="submit_form.php" method="POST">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        <button type="submit">Send</button>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
     </form>
-</section>
-
-<footer>
+  </section>
+  <footer>
     <p>&copy; 2024 Sigurd Vaaler</p>
-    <p>Business Inquiries Contact: <a href="mailto:Sigurdvaaler@hotmail.com">Sigurdvaaler@hotmail.com</a></p>
-</footer>
-
-<script src="index.js"></script>
+    <p>Business Inquiries: <a href="mailto:Sigurdvaaler@hotmail.com">Sigurdvaaler@hotmail.com</a></p>
+  </footer>
+  <script src="index.js"></script>
 </body>
 </html>
+
